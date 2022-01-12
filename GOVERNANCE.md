@@ -1,36 +1,84 @@
 # Governance
 
-`haskell-cryptography` (herein referred to as the "Organisation") is a GitHub organisation that aims to provide a support structure to open-source maintainers producing cryptography libraries.
+`haskell-cryptography` (herein referred to as the "Organisation") is a GitHub organisation that aims to provide a support structure to open-source maintainers producing cryptography projects.
 
-This document elaborates on administrative and operational aspects of the Organisation.
+The Organisation has the following goals:
+
+* Prevent situations where too few people are supporting too critical projects for the ecosystem.
+* Prevent having a very closed group of people having too much control over every aspect of a project.
+* To encourage and support part-time, niche contributors to the projects.
+* To ensure continuity and stability through documentation, testing and benchmarking.
+* To listen to the needs of the community and industrial users, and lowering the barrier to industrial adoption
+
+Examples:
+
+> A single maintainer doing all the “boring work” suddenly becomes unavailable for reasons outside of the project.
+
+> A large number of people requesting a fix or feature not being listened to for personal disagreements with the core maintenance team.
+
+> Somebody wanting to contribute a feature but not knowing where to begin, how to approach it, because it is not explained anywhere.
+
+> A pull-request lands which creates massive performance regression when compiled with `-O2`, affecting a large number of downstream users.
+
+> Losing adoption opportunities because the most popular options are too entrenched and are maintained by stubborn people.
+
+---
+
+This document elaborates on administrative and operational aspects of the Organisation, designed to serve and fullfill these goals as a priority.
 
 ## Administrative aspect
 
-The Organisation's administrative aspects are handled by the Core Team. While a healthy overlap is appreciated between the Core Team and the contributors,
-An employee of the Haskell Foundation has a position in the Core Team as to facilitate ecosystem-related matters and discussion with other institutional parties.
+The Organisation's administrative aspects are handled by the Core Team. The Core team are also contributors to projects.
+
+### Bylaws
+
+1. Core Team members are expected to do various kind of tasks (not niche things)
+2. Core Team members are expected to be available long-term, and it if it's not the case, they are to be substituted or replaced
+3. Core Team members may be required to do work when needed.
+4. The Core Team has no fixed number of seats, the number varies according to the needs of the Organisation.
+
+The non-Core Team contributors are not bound to these items. Non-Core Team contributors can make infrequent contributions, not maintain extended presence and not subject to working on-demand.
+
+### Selection process
+
+To be a part of the Core Team, the candidate needs to have a history of contributing to the projects hosted by the Organisation
+
+An Interim Core Team will be formed from an initial pool of volunteers.
+
+### Substitutions and Replacements
+
+Substitutions: Stepping-up for a fixed period of time when a Core Team member cannot fulfill their role;
+
+Replacement: Being a permanent replacement for a Core Team member;
 
 ## Operational aspect
 
 As an Organisation, `haskell-cryptography` concerns itself with two things:
 
-1. Code production
+1. Code production and maintenance
 2. Services related to the code and users
 
 ### Code production
 
 `haskell-cryptography` produces a series of projects related to cryptography.
-These projects have a referent person that is in charge of being the main point of contact, handle inquiries from the core team and act as an editor for the project.
+Each project has a key person that is in charge of being the main point of contact,
+handle inquiries from the core team and act as an editor for the project.
 
-This role involves making concrete the strategy of the core team, and being in charge of the management of the project,
-whithin the framework established by the guidelines published in the `haskell-cryptography/governance` repository.
-The referent person is  autonomous but held accountable. This doesn't prevent a decision proces that is involving multiple parties in a "flat"
-governance structure for a project, but the referent is the one person that is in charge of making these decisions official, answering for them and enforcing them.
+This role involves enacting the goals of the Organisation, and being in charge of the management of the project,
+whithin the framework established by the guidelines published in the [haskell-cryptography/governance](https://github.com/haskell-cryptography/governance) repository.
+The referent person is  autonomous but held accountable. This doesn't prevent a decision process that involves multiple parties in a "flat"
+governance structure for a project, but the key person is the one person that is in charge of making these decisions official,
+answering for them and enforcing them.
 
 ### Services related to the code and users
 
 As a support structure for open-source maintainers, `haskell-cryptography` has the ability to host projects of the Haskell ecosystem related to cryptography,
-should their maintainer decide that this is the best course of action for their project. By transferring a project to the organisation, the authors of a project
-do not implictly relinquish their permissions, authorship and ownership of the project, and benefit from the collaborators of the organisation to help them
-with tasks they need help with. 
+should their maintainer decide that this is the best course of action for their project.
+By transferring a project to the organisation, the authors of a project do not implictly relinquish their permissions, authorship and ownership
+of the project, and benefit from the collaborators of the organisation to help them with tasks they need help with.
 
-Projects can be donated for historical preservation or to seek new leadership. 
+Projects can be donated for ongoing maintenance and improvement, or to seek new leadership. 
+
+In the interest of keeping a healthy and secure ecosystem, the Core Team will have to perform some tasks on projects that were transferred to the Organisation.
+These tasks may take priority over the specific ideas of the original authors of the projects.
+We acknowledge that the authors have insights that we lack and know their domains better than the Core Team may, but in the interest of the ecosystem the needs of our contributors may outweigh the ideals of the original authors. This is a flexible policy and consensus with the authors will always be preferred.
