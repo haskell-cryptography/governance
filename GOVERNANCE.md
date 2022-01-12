@@ -8,9 +8,10 @@ The Organisation has the following goals:
 * Prevent having a very closed group of people having too much control over every aspect of a project.
 * To encourage and support part-time, niche contributors to the projects.
 * To ensure continuity and stability through documentation, testing and benchmarking.
-* To listen to the needs of the community and industrial users, and lowering the barrier to industrial adoption
+* To listen to the needs of the community and industrial users, and lowering the barrier to industrial adoption.
+* To ensure that current security practices are easy for others and maintained whithin the ecosystem.
 
-Examples:
+Examples of situations that we aim to remediate to:
 
 > A single maintainer doing all the “boring work” suddenly becomes unavailable for reasons outside of the project.
 
@@ -21,6 +22,8 @@ Examples:
 > A pull-request lands which creates massive performance regression when compiled with `-O2`, affecting a large number of downstream users.
 
 > Losing adoption opportunities because the most popular options are too entrenched and are maintained by stubborn people.
+
+> A security flaw is discovered by researchers and we need to urgently upgrade a project, in a possibly breaking way.
 
 ---
 
