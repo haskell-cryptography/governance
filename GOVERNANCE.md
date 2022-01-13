@@ -81,7 +81,7 @@ By transferring a project to the organisation, the authors of a project do not i
 of the project, and benefit from the collaborators of the organisation to help them with tasks they need help with.
 
 Projects can be donated for ongoing maintenance and improvement, or to seek new leadership. 
-
+The organisation intends to allow package maintainers to maintain control of their packages, if they wish to, while making it easier to bring together effort to improve the state of cryptography in the Haskell ecosystem.
 In the interest of keeping a healthy and secure ecosystem, the Core Team will have to perform some tasks on projects that were transferred to the Organisation.
 These tasks may take priority over the specific ideas of the original authors of the projects.
 We acknowledge that the authors have insights that we lack and know their domains better than the Core Team may, but in the interest of the ecosystem the needs of our contributors may outweigh the ideals of the original authors. This is a flexible policy and consensus with the authors will always be preferred.
