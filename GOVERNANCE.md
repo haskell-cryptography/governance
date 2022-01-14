@@ -4,8 +4,8 @@
 
 The Organisation has the following goals:
 
-* Prevent situations where too few people are supporting too critical projects for the ecosystem.
-* Prevent having a very closed group of people having too much control over every aspect of a project.
+* Prevent situations where too few people are supporting critical projects for the ecosystem.
+* Prevent having a closed group of people having too much control over every aspect of a project.
 * To encourage and support part-time, niche contributors to the projects.
 * To ensure continuity and stability through documentation, testing and benchmarking.
 * To listen to the needs of the community and industrial users, and lowering the barrier to industrial adoption.
@@ -36,11 +36,11 @@ The Organisation's administrative aspects are handled by the Core Team. The Core
 ### Bylaws
 
 1. Core Team members are expected to do various kind of tasks (not niche things)
-2. Core Team members are expected to be available long-term, and it if it's not the case, they are to be substituted or replaced
+2. Core Team members are expected to be available long-term, and it if it's not the case, the other Core Team members may temporarily or permanently reassign their position.
 3. Core Team members may be required to do work when needed.
 4. The Core Team has no fixed number of seats, the number varies according to the needs of the Organisation.
 
-The non-Core Team contributors are not bound to these items. Non-Core Team contributors can make infrequent contributions, not maintain extended presence and not subject to working on-demand.
+The non-Core Team contributors are not bound to these items. Non-Core Team contributors can make infrequent contributions, not maintain extended presence and are not subject to working on-demand.
 
 ### Selection process
 
@@ -64,12 +64,12 @@ As an Organisation, `haskell-cryptography` concerns itself with two things:
 ### Code production
 
 `haskell-cryptography` produces a series of projects related to cryptography.
-Each project has a key person that is in charge of being the main point of contact,
+Each project has a key person that is the main point of contact for the project,
 handle inquiries from the core team and act as an editor for the project.
 
 This role involves enacting the goals of the Organisation, and being in charge of the management of the project,
 whithin the framework established by the guidelines published in the [haskell-cryptography/governance](https://github.com/haskell-cryptography/governance) repository.
-The referent person is  autonomous but held accountable. This doesn't prevent a decision process that involves multiple parties in a "flat"
+The key person is autonomous but accountable for the project. This doesn't prevent a decision process that involves multiple parties in a "flat"
 governance structure for a project, but the key person is the one person that is in charge of making these decisions official,
 answering for them and enforcing them.
 
