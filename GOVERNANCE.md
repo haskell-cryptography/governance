@@ -10,6 +10,7 @@ The Organisation has the following goals:
 * To ensure continuity and stability through documentation, testing and benchmarking.
 * To listen to the needs of the community and industrial users, and lowering the barrier to industrial adoption.
 * To ensure that current security practices are easy for others and maintained whithin the ecosystem.
+* To ensure timely update in the community package repository
 
 Examples of situations that we aim to remediate to:
 
@@ -25,6 +26,8 @@ Examples of situations that we aim to remediate to:
 
 > A security flaw is discovered by researchers and we need to urgently upgrade a project, in a possibly breaking way.
 
+> A bug fix has been approved, merged, but not released.
+
 ---
 
 This document elaborates on administrative and operational aspects of the Organisation, designed to serve and fullfill these goals as a priority.
@@ -35,9 +38,9 @@ The Organisation's administrative aspects are handled by the Core Team. The Core
 
 ### Bylaws
 
-1. Core Team members are expected to do various kind of tasks (not niche things)
+1. Core Team members are expected to do various kind of tasks, from code contributions to handling administrative and interpersonal aspects.
 2. Core Team members are expected to be available long-term, and it if it's not the case, the other Core Team members may temporarily or permanently reassign their position.
-3. Core Team members may be required to do work when needed.
+3. Core Team members may be required to do work when needed, especially in the case of security issues, compiler adoption, etc.
 4. The Core Team has no fixed number of seats, the number varies according to the needs of the Organisation.
 
 The non-Core Team contributors are not bound to these items. Non-Core Team contributors can make infrequent contributions, not maintain extended presence and are not subject to working on-demand.
@@ -65,7 +68,8 @@ As an Organisation, `haskell-cryptography` concerns itself with two things:
 
 `haskell-cryptography` produces a series of projects related to cryptography.
 Each project has a key person that is the main point of contact for the project,
-handle inquiries from the core team and act as an editor for the project.
+handle inquiries from the core team and act as a leading force for the project,
+proving feedback on submitted code and setting directions.
 
 This role involves enacting the goals of the Organisation, and being in charge of the management of the project,
 whithin the framework established by the guidelines published in the [haskell-cryptography/governance](https://github.com/haskell-cryptography/governance) repository.
@@ -81,7 +85,13 @@ By transferring a project to the organisation, the authors of a project do not i
 of the project, and benefit from the collaborators of the organisation to help them with tasks they need help with.
 
 Projects can be donated for ongoing maintenance and improvement, or to seek new leadership. 
-The organisation intends to allow package maintainers to maintain control of their packages, if they wish to, while making it easier to bring together effort to improve the state of cryptography in the Haskell ecosystem.
+The organisation intends to allow package maintainers to maintain control of their packages, if they wish to, while making it easier to bring together
+effort to improve the state of cryptography in the Haskell ecosystem.
 In the interest of keeping a healthy and secure ecosystem, the Core Team will have to perform some tasks on projects that were transferred to the Organisation.
-These tasks may take priority over the specific ideas of the original authors of the projects.
-We acknowledge that the authors have insights that we lack and know their domains better than the Core Team may, but in the interest of the ecosystem the needs of our contributors may outweigh the ideals of the original authors. This is a flexible policy and consensus with the authors will always be preferred.
+These tasks, like merging patches or publishing new releases on Hackage, may take priority over the specific ideas of the original authors of the projects.
+We acknowledge that the authors have insights that we lack and know their domains better than the Core Team may; but in the interest of the ecosystem,
+the needs of our contributors and users may outweigh the ideals of the original authors.
+
+As such, upload permissions on Hackage shall be given with at least one member of the Core Team, who is not also the original author of the project.
+
+This is a flexible policy and consensus with the authors will always be preferred.
