@@ -40,7 +40,7 @@ The Organisation's administrative aspects are handled by the Core Team. The Core
 
 1. Core Team members are expected to do various kind of tasks, from code contributions to handling administrative and interpersonal aspects.
 2. Core Team members are expected to be available long-term, and it if it's not the case, the other Core Team members may temporarily or permanently reassign their position.
-3. Core Team members may be required to do work when needed, especially in the case of security issues, compiler adoption, etc.
+3. Core Team members may be required to do work when needed, especially in the case of security issues, compiler upgrades, etc.
 4. The Core Team has no fixed number of seats, the number varies according to the needs of the Organisation.
 
 The non-Core Team contributors are not bound to these items. Non-Core Team contributors can make infrequent contributions, not maintain extended presence and are not subject to working on-demand.
