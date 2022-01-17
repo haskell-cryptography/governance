@@ -8,9 +8,9 @@ The Organisation has the following goals:
 * Prevent having a closed group of people having too much control over every aspect of a project.
 * To encourage and support part-time and occasional contributors to the projects.
 * To ensure continuity and stability through documentation, testing and benchmarking.
-* To listen to the needs of the community and industrial users, and lowering the barrier to industrial adoption.
+* To listen to the needs of the community and industrial users, and lower the barrier to industrial adoption.
 * To ensure that current security practices are easy for others and maintained within the ecosystem.
-* To ensure timely updates are published in the community package repository, like Hackage.
+* To ensure timely updates are published in community package repositories, such as Hackage.
 
 Examples of situations that we aim to avoid:
 
@@ -43,22 +43,21 @@ The Organisation's administrative aspects are handled by the Core Team. The Core
 3. Core Team members may be required to do work when needed, especially in the case of security issues, compiler upgrades, etc.
 4. The Core Team has no fixed number of seats, the number varies according to the needs of the Organisation.
 
-The non-Core Team contributors are not bound to these bylaws. Non-Core Team contributors can make infrequent contributions, not maintain extended presence and are not subject to working on-demand.
+The non-Core Team contributors are not bound by these bylaws. Non-Core Team contributors can make infrequent contributions, not maintain extended presence and are not subject to working on-demand.
 
 ### Selection process
 
-To be a part of the Core Team, the candidate needs to have a history of contributing to the projects hosted by the Organisation
+To be a part of the Core Team, the candidate needs to have a history of contributing to the projects hosted by the Organisation.
 An Interim Core Team will be formed from an initial pool of volunteers.
 
 ### Substitutions and Replacements
 
-Substitutions: Stepping-up for a fixed period of time when a Core Team member cannot fulfill their role;
-
-Replacement: Being a permanent replacement for a Core Team member;
+Should a Core Team member be unable to fulfill their role, the Core Team has the ability to have someone else step-up for a fixed period of time ("substitution"),
+or bring a more permanent member to the team as one member leaves ("replacement").
 
 ## Operational aspect
 
-As an Organisation, `haskell-cryptography` concerns itself with two things:
+As an organisation, `haskell-cryptography` concerns itself with two things:
 
 1. Code production and maintenance
 2. Services related to the code and users
