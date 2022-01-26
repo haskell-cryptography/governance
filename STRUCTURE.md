@@ -2,11 +2,13 @@
 
 ## Introduction
 
-## Goals and motivations
+This document describes the strategy taken by the haskell-cryptography organisation on the subject of implementing and structuring bindings to cryptography libraries.
+
+This is a living document.
 
 ## Structure
 
-### Cesque level
+### C-esque level
 
 This is the 'lower' level of the bindings. It is designed to serve as a thin
 layer over C, consisting only of `foreign import` bindings, any necessary setup
@@ -42,18 +44,18 @@ An example of a package in the 'algorithmic' category, consider the package
 Haskell functionality, allowing it to be used in a Haskell project which
 requires Argon2 (for whatever reason) without having to deal with C, the FFI, or
 anything similar. An example of a package in the 'functional' category, consider
-the package `cryptography-password-hashing`, which embodies good practices for
+the package `cryptography-passwords`, which embodies good practices for
 password hashing, allowing Haskell projects to handle this task easily, without
 necessarily needing to understand precisely how this gets done.
 
-Both of the examples would use the Cesque `cryptography-libsodium` for
+Both of the examples would use the C-esque `cryptography-libsodium` for
 implementations: the differences are their focus and the APIs they expose. For
 'algorithmic' category packages, the focus is on providing easy and secure use
 of an _algorithm_ in Haskell, without considering use case; for 'functional'
 category packages, the focus is on providing an easy and secure way to _do some
 task_, without focus on the algorithm or algorithms chosen to do so.
 
-These packages, unlike the Cesque layer, are expected to provide more
+These packages, unlike the C-esque layer, are expected to provide more
 abstraction, both to avoid the complexities of C and the FFI, but also to
 address various expectations that Haskellers have, regarding things such as:
 
@@ -113,8 +115,9 @@ following order:
 2. Is there genuine need from some person or organization in the ecosystem and
    community for this?
 
-We prioritize security over demand for several reasons. Firstly, one of the core
+We prioritize security over demand, as one of the core
 foci of this organization and project is the improvement of security-related
-practices in the Haskell ecosystem. By implementing functionality that is known
+practices in the Haskell ecosystem.
+By implementing functionality that is known
 to be insecure or a bad practice, we are implicitly stating that this is OK,
-which works directly counter to a stated goal. Secondly, 
+which works directly counter to a stated goal.
