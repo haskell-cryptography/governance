@@ -21,7 +21,6 @@ Specifically, the following principles apply:
   libraries are bundled or linked to. Any and all handling of this, for any
   platform, must be done by the library.
 * These libraries cannot have any dependencies other than `base`.
-* Modules can only contain `foreign import` declarations.
 * The documentation for the modules must be strong enough to stand alone:
   specifically, at least 80% of all questions regarding the use of bindings must
   be answerable entirely from the documentation of the module, _not_ the library
@@ -99,7 +98,7 @@ These principles apply to 'functional' category packages specifically:
   something, their differences must be _clearly_ enumerated and marked, with a
   focus on non-security-familiar users.
 * Doing the right thing should be easy; doing the wrong thing should be
-  impossible.
+  close to impossible.
 
 ## Organization
 
