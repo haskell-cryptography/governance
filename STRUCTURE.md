@@ -6,6 +6,13 @@ This document describes the strategy taken by the haskell-cryptography organisat
 
 This is a living document.
 
+
+> The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL
+> NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED",
+> "MAY", and "OPTIONAL" in this document are to be interpreted as
+> described in [BCP 14][BCP 14] ([RFC2119][RFC2119] + [RFC8174][RFC8174]) when, and only when, they
+> appear in all capitals, as shown here.
+
 ## Structure
 
 ### C-esque level
@@ -17,15 +24,15 @@ documentation of use.
 
 Specifically, the following principles apply:
 
-* Users of these libraries should never have to even think about how the
+* Users of these libraries SHOULD never have to even think about how the
   libraries are bundled or linked to. Any and all handling of this, for any
-  platform, must be done by the library.
-* These libraries cannot have any dependencies other than `base`.
-* The documentation for the modules must be strong enough to stand alone:
-  specifically, at least 80% of all questions regarding the use of bindings must
+  platform, MUST be done by the library.
+* These libraries SHOULD NOT have any dependencies other than `base`.
+* The documentation for the modules MUST be strong enough to stand alone:
+  specifically, at least 80% of all questions regarding the use of bindings SHOULD
   be answerable entirely from the documentation of the module, _not_ the library
   it wraps or binds to.
-* CI must check that the wrapping or bundling works correctly. This must
+* CI MUST check that the wrapping or bundling works correctly. This MUST
   include checks on Windows: this is _especially_ important, as this is the most
   problematic platform.
 
@@ -47,7 +54,7 @@ the package `cryptography-passwords`, which embodies good practices for
 password hashing, allowing Haskell projects to handle this task easily, without
 necessarily needing to understand precisely how this gets done.
 
-Both of the examples would use the C-esque `cryptography-libsodium` for
+Both of the examples would use the C-esque `cryptography-libsodium-bindings` for
 implementations: the differences are their focus and the APIs they expose. For
 'algorithmic' category packages, the focus is on providing easy and secure use
 of an _algorithm_ in Haskell, without considering use case; for 'functional'
@@ -67,14 +74,14 @@ address various expectations that Haskellers have, regarding things such as:
 
 Specifically, the following principles generally apply:
 
-* These libraries cannot depend on non-boot packages;
-* Abstraction should be kept minimal. `newtype`-wrapping a `ForeignPtr` is fine,
+* These libraries SHOULD NOT depend on non-boot packages;
+* Abstraction SHOULD be kept minimal. `newtype`-wrapping a `ForeignPtr` is fine,
   type class hierarchies without laws are not.
 * Whenever possible, if there are multiple secure ways to do something, without
   a definite 'this one is always better' option, users of these libraries should
   be given _all_ options, as well as a detailed explanation of why they should
   prefer any given one.
-* Partiality must not exist unless specifically marked as unsafe, through a
+* Partiality SHOULD NOT exist unless specifically marked as unsafe, through a
   dedicated `Unsafe` module or prefixing the name with `unsafe`. This extends to
   instances of known partial type classes (such as `Read`).
 
@@ -120,3 +127,7 @@ practices in the Haskell ecosystem.
 By implementing functionality that is known
 to be insecure or a bad practice, we are implicitly stating that this is OK,
 which works directly counter to a stated goal.
+
+[BCP 14]: https://www.rfc-editor.org/info/bcp14
+[RFC2119]: https://datatracker.ietf.org/doc/html/rfc2119
+[RFC8174]: https://datatracker.ietf.org/doc/html/rfc8174
