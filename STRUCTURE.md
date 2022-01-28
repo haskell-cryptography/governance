@@ -27,7 +27,7 @@ Specifically, the following principles apply:
 * Users of these libraries SHOULD never have to even think about how the
   libraries are bundled or linked to. Any and all handling of this, for any
   platform, MUST be done by the library.
-* These libraries SHOULD NOT have any dependencies other than `base`.
+* These libraries MUST NOT have any dependencies other than `base`.
 * The documentation for the modules MUST be strong enough to stand alone:
   specifically, at least 80% of all questions regarding the use of bindings SHOULD
   be answerable entirely from the documentation of the module, _not_ the library
