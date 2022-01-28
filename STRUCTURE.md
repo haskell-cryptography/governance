@@ -28,6 +28,7 @@ Specifically, the following principles apply:
   libraries are bundled or linked to. Any and all handling of this, for any
   platform, MUST be done by the library.
 * These libraries MUST NOT have any dependencies other than `base`.
+  * Test and Benchmark suites are exempt from this rule
 * The documentation for the modules MUST be strong enough to stand alone:
   specifically, at least 80% of all questions regarding the use of bindings SHOULD
   be answerable entirely from the documentation of the module, _not_ the library
@@ -75,6 +76,7 @@ address various expectations that Haskellers have, regarding things such as:
 Specifically, the following principles generally apply:
 
 * These libraries SHOULD NOT depend on non-boot packages;
+  * Test and Benchmark suites are exempt from this rule
 * Abstraction SHOULD be kept minimal. `newtype`-wrapping a `ForeignPtr` is fine,
   type class hierarchies without laws are not.
 * Whenever possible, if there are multiple secure ways to do something, without
