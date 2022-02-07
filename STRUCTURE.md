@@ -6,7 +6,6 @@ This document describes the strategy taken by the haskell-cryptography organisat
 
 This is a living document.
 
-
 > The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL
 > NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED",
 > "MAY", and "OPTIONAL" in this document are to be interpreted as
@@ -27,8 +26,7 @@ Specifically, the following principles apply:
 * Users of these libraries SHOULD never have to even think about how the
   libraries are bundled or linked to. Any and all handling of this, for any
   platform, MUST be done by the library.
-* These libraries MUST NOT have any dependencies other than `base`.
-  * Test and Benchmark suites are exempt from this rule
+* These libraries MUST NOT have any dependencies other than `base`. Test and benchmark suites are exempt from this rule
 * The documentation for the modules MUST be strong enough to stand alone:
   specifically, at least 80% of all questions regarding the use of bindings SHOULD
   be answerable entirely from the documentation of the module, _not_ the library
