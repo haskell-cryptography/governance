@@ -1,6 +1,6 @@
 # Governance
 
-`haskell-cryptography` (herein referred to as the "Organisation") is a GitHub organisation that aims to provide a support structure to open-source maintainers producing projects wrapping or implementing cryptography.
+`haskell-cryptography` (herein referred to as the "Organisation") is an organisation that aims to provide a support structure to open-source maintainers producing projects wrapping or implementing cryptography.
 
 The Organisation has the following goals:
 
